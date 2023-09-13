@@ -1,0 +1,44 @@
+*
+  margin: 0
+  box-sizing: border-box
+
+html
+  font-size: 16px
+  color: #fff
+
+.counter
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100vh
+  background-color: #2b2b2b
+  &__inner
+    height: 200px
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    gap: 30px
+    padding: 20px
+    border: 1px solid black
+    border-radius: 10px
+  &__input
+    height: 40px
+    font-size: 25px
+    text-align: center
+    font-weight: bold
+    background-color: #ffffffcf
+  &__buttons
+    display: flex
+    align-items: center
+    gap: 20px
+  &__button
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    font-size: 20px
+    font-weight: bold
+    &--red
+      background-color: #ff0000
+    &--blue
+      background-color: #2f00ff
