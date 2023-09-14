@@ -37,19 +37,22 @@ minus.addEventListener('click', () => {oneMinus(input)})
 
 //----------------------------------------------------------------------------------------------------------
 
-// Напишите функцию, которая принимает в качестве параметра массив и математическое  действие. 
-// Функция должна проходиться по массиву и делать с элементами то, что указано во втором параметре. 
-// В качестве аргумента второго параметра должна быть функция
-
 var arr = [1, 2, 3]
-function mult(arrayNum) {
-  var multiplicationResult = 0
-  for (const number of arrayNum) {
-    multiplicationResult = multiplicationResult * number
-  }
-  return multiplicationResult
+console.log(arr);
+
+//Функция возведения в квадрат каждого элемента массива, 
+function exp(Num) {
+    return Num * Num
 }
 
-function exp(arrayNum) {
-  
+//Функция выполняющая действие с каждым элементом массива, результат возвращается в новом массиве
+function result(array, func) {
+  var resultArr = []
+  for (let i = 0; i < array.length; i++) {
+    resultArr[i] = func(array[i])
+  }
+  return resultArr
 }
+
+
+console.log(result(arr, exp));
