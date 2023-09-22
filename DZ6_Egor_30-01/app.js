@@ -16,7 +16,8 @@ function books(letter, ...bookNames) {
       otherBooks.push(bookName)
     }
   }
-  return console.log(filtredBooks, otherBooks);
+  
+  return console.log(`Книги в названии которых есть буква ${letter}: ` + filtredBooks.join(', ')), console.log('Остальные книги: ' + otherBooks.join(', '))
 }
 
 books('у', 'Преступление и наказание', 'Убийство в Восточном экспрессе', 'Евгений Онегин', 'Код да Винчи','Двенадцать стульев', 'А зори здесь тихие', 'Война и мир', '20000 лье под водой', )
