@@ -151,6 +151,7 @@ buttons[4].addEventListener('click', () => {
     input1.value = 'Выберите действие'
   } else {
     input1.style.color = 'black'
+    input1.value = num1
     const result = eval(`${num1} ${action} ${num2}`)
     resultBox.innerHTML = (`${num1} ${action} ${num2} = ${result}`)
     main.append(resultBox)
