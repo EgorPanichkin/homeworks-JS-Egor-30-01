@@ -1,3 +1,4 @@
+// Получение значения input
 // var inputValue = Number(document.getElementById('input').value)
 // console.log(inputValue);
 var sum = document.getElementById('btn1')
